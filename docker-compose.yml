@@ -9,3 +9,6 @@ services:
     environment:
       # Classic Jupyter Notebook (not Lab); open http://localhost:8888 and click earthquakes.ipynb
       JUPYTER_CMD: notebook
+      # AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      # AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      # AWS_DEFAULT_REGION: us-east-1

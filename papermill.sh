@@ -4,5 +4,8 @@
 
 # papermill earthquakes.ipynb /dev/null
 
-papermill earthquakes.ipynb output.ipynb -p starttime '2025-03-01' -p endtime '2025-06-31'
+day_before_yesterday=`date -d "2 days ago" +%Y-%m-%d`
+yesterday=`date -d "yesterday" +%Y-%m-%d`
+
+papermill earthquakes.ipynb output.ipynb -p starttime $day_before_yesterday -p endtime $yesterday
 
